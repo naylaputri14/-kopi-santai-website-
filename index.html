@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KopiSantai</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>KOPI SANTAI</h1>
+    <header>
+        <div class="logo">
+            <h1>Kopi Santai</h1>
+            <h3>"Nikmati Setiap Tegukan"</h3>
+            <img src="images/logo.jpg" alt="Logo">
+        </div>
+        <nav type="none">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="isi-hero">
+            <h2>Selamat Datang di Kopi Santai</h2>
+            <p>Tempat Terbaik untuk Bersantai dengan Secangkir Kopi</p>
+            <div class="tombol-hero">
+                <li><a href="#menu">Lihat Menu</a></li>
+                <li><a href="#reservation">Buat Reservasi</a></li>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="featured-menu">
+        <h2>Menu Favorit Kami</h2>
+        <div class="isi-menu">
+            <article class="menu-item">
+                <img src="images/espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p class="price">Rp25.000</p>
+                <p>Kopi pekat dengan aroma khas, cocok untuk penikmat kopi sejati.</p>
+            </article>
+
+            <article class="menu-item">
+                <img src="images/latte.jpg" alt="Caffe Latte">
+                <h3>Caffe Latte</h3>
+                <p class="price">Rp30.000</p>
+                <p>Perpaduan espresso dan susu untuk cita rasa yang seimbang.</p>
+            </article>
+
+            <article class="menu-item">
+                <img src="images/cappucino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p class="price">Rp28.000</p>
+                <p>Rasa kopi yang kuat dengan foam susu di atasnya.</p>
+            </article>
+
+            <article class="menu-item">
+                <img src="images/mocha.jpg" alt="Mocha">
+                <h3>Mocha</h3>
+                <p class="price">Rp32.000</p>
+                <p>Kombinasi kopi dan cokelat yang manis.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="about" class="about-cafe">
+        <h2>Mengapa Memilih Kami?</h2>
+        <div class="keunggulan">
+            <article class="feature">
+                <img src="images/beans.jpg" alt="Biji Kopi Premium">
+                <h3>Biji Kopi Premium</h3>
+                <p>Kami hanya menggunakan biji kopi pilihan yang terbaik dari para petani lokal.</p>
+            </article>
+
+            <article class="feature">
+                <img src="images/pastaa.jpg" alt="Suasana Nyaman">
+                <h3>Suasana Nyaman</h3>
+                <p>Kenyamanan ruangan dengan desain santai.</p>
+            </article>
+
+            <article class="feature">
+                <img src="images/wifi.jpg" alt="Wifi Gratis">
+                <h3>Wifi Gratis</h3>
+                <p>Bersantai sambil tetap produktif dengan koneksi internet yang cepat.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="isi-footer">
+            <address>
+                <p><strong>Alamat:</strong> Jl. Kenangan No.15, Bandung</p>
+                <p><strong>Telepon:</strong> +62 812-777-999</p>
+                <p><strong>Email:</strong> info@kopisantai.com</p>
+            </address>
+                
+            <div class="hours">
+                <h4>Jam Operasional</h4>
+                <p>Senin - Jumat: 08.00 - 22.00</p>
+                <p>Sabtu - Minggu: 09.00 - 23.00</p>
+            </div>
+
+            <div class="social-media">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Kopi Santai. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

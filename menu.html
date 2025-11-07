@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button data-filter="all">All</button>
+        <button data-filter="coffee">Coffee</button>
+        <button data-filter="non-coffee">Non-Coffee</button>
+        <button data-filter="food">Food</button>
+        <button data-filter="snacks">Snacks</button>
+    </nav>
+
+    <section class="menu-lengkap">
+        <h2>Daftar Menu Lengkap</h2>
+        <div class="isi-menu">
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/espresso.jpg" alt="Espresso">
+                    <figcaption>Espresso</figcaption>
+                </figure>
+                <h3>Espresso</h3>
+                <p>Kopi pekat dengan aroma khas, cocok untuk penikmat kopi sejati.</p>
+                <p>Rp25.000</p>
+            </article>
+
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/cappucino.jpg" alt="Cappuccino">
+                    <figcaption>Cappuccino</figcaption>
+                </figure>
+                <h3>Cappuccino</h3>
+                <p>Rasa kopi yang kuat dengan foam susu di atasnya.</p>
+                <p>Rp28.000</p>
+                <span class="tag">Best Seller</span>
+            </article>
+
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/latte.jpg" alt="Caffe Latte">
+                    <figcaption>Caffe Latte</figcaption>
+                </figure>
+                <h3>Caffe Latte</h3>
+                <p>Perpaduan espresso dan susu untuk cita rasa yang seimbang.</p>
+                <p>Rp30.000</p>
+            </article>
+
+            <article class="menu-item" data-category="coffee">
+                <figure>
+                    <img src="images/americano.jpg" alt="Americano">
+                    <figcaption>Americano</figcaption>
+                </figure>
+                <h3>Americano</h3>
+                <p>Espresso dengan tambahan air panas.</p>
+                <p>Rp27.000</p>
+            </article>
+
+            <article class="menu-item" data-category="non-coffee">
+                <figure>
+                    <img src="images/chocohot.jpg" alt="Hot Chocolate">
+                    <figcaption>Hot Chocolate</figcaption>
+                </figure>
+                <h3>Hot Chocolate</h3>
+                <p>Minuman cokelat hangat yang manis dan menenangkan.</p>
+                <p>Rp26.000</p>
+                <span class="tag">Best Seller</span>
+            </article>
+
+            <article class="menu-item" data-category="non-coffee">
+                <figure>
+                    <img src="images/matchaa.jpg" alt="Matcha Latte">
+                    <figcaption>Matcha Latte</figcaption>
+                </figure>
+                <h3>Matcha Latte</h3>
+                <p>Perpaduan matcha Jepang dan susu lembut.</p>
+                <p>Rp29.000</p>
+                <mark>New</mark>
+            </article>
+
+            <article class="menu-item" data-category="non-coffee">
+                <figure>
+                    <img src="images/teaa.jpg" alt="Classic Tea">
+                    <figcaption>Classic Tea</figcaption>
+                </figure>
+                <h3>Classic Tea</h3>
+                <p>Teh hangat pilihan dengan aroma melati yang menenangkan.</p>
+                <p>Rp20.000</p>
+            </article>
+
+            <article class="menu-item" data-category="food">
+                <figure>
+                    <img src="images/pastaa.jpg" alt="Creamy Pasta">
+                    <figcaption>Creamy Pasta</figcaption>
+                </figure>
+                <h3>Creamy Pasta</h3>
+                <p>Pasta lembut dengan saus krim gurih.</p>
+                <p>Rp45.000</p>
+            <span class="tag">Best Seller</span>
+            </article>
+
+            <article class="menu-item" data-category="food">
+                <figure>
+                    <img src="images/sandwichh.jpg" alt="Club Sandwich">
+                    <figcaption>Sandwich</figcaption>
+                </figure>
+                <h3>Sandwich</h3>
+                <p>Roti isi ayam, sayur, dan saus spesial.</p>
+                <p>Rp40.000</p>
+            </article>
+
+            <article class="menu-item" data-category="food">
+                <figure>
+                    <img src="images/salad.jpg" alt="Fresh Salad">
+                    <figcaption>Fresh Salad</figcaption>
+                </figure>
+                <h3>Fresh Salad</h3>
+                <p>Sayuran segar dengan saus dressing yang sehat.</p>
+                <p>Rp35.000</p>
+            </article>
+
+            <article class="menu-item" data-category="snacks">
+                <figure>
+                    <img src="images/cakee.jpg" alt="Chocolate Cake">
+                    <figcaption>Chocolate Cake</figcaption>
+                </figure>
+                <h3>Chocolate Cake</h3>
+                <p>Kue cokelat lembut dengan lapisan ganache yang manis.</p>
+                <p>Rp25.000</p>
+                <span class="tag">Best Seller</span>
+            </article>
+
+            <article class="menu-item" data-category="snacks">
+                <figure>
+                    <img src="images/cookies.jpg" alt="Cookies">
+                    <figcaption>Cookies</figcaption>
+                </figure>
+                <h3>Cookies</h3>
+                <p>Kue kering renyah dengan potongan choco chip.</p>
+                <p>Rp18.000</p>
+                <mark>New</mark>
+            </article>
+
+            <article class="menu-item" data-category="snacks">
+                <figure>
+                    <img src="images/butter.jpg" alt="Butter Pastry">
+                    <figcaption>Butter Pastry</figcaption>
+                </figure>
+                <h3>Butter Pastry</h3>
+                <p>Pastry lembut berlapis mentega gurih.</p>
+                <p>Rp22.000</p>
+            </article>
+        </div>
+    </section>
+</body>
+</html>

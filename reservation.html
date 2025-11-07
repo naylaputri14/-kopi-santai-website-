@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kopi Santai — Reservasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="font-inter text-gray-800 bg-fixed bg-cover bg-center relative" 
+  style="background-image: linear-gradient(rgba(247, 244, 239, 0.92), rgba(247, 244, 239, 0.95)), url('coffee-bg.jpg');">
+
+  <header class="sticky top-0 bg-white/80 backdrop-blur-sm z-40 shadow-md">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="WhatsApp Image 2025-11-07 at 10.10.54_cc348ecb.jpg" alt="Kopi Santai" class="w-10 h-10 rounded-md object-cover ring-2 ring-gold">
+        <div>
+            <h1 class="font-mont text-2xl text-cocoa font-bold tracking-wider">Kopi Santai</h1>
+            <p class="text-xs text-gold font-light tracking-widest">NIKMATI SETIAP TEGUKAN</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 items-center text-sm font-medium">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="reservation.html" class="nav-link active">Reservation</a>
+      </nav>
+      <div class="md:hidden"><button id="navToggle4" class="text-xl">☰</button></div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-16 grid gap-10 md:grid-cols-2 relative z-10">
+
+    <section class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+      <h2 class="text-3xl font-mont text-brown-800 mb-4 border-b-2 border-gold inline-block pb-1">Reservasi Meja</h2>
+      <p class="mb-4">Silakan isi form di samping untuk melakukan reservasi. Konfirmasi akan dikirim via WhatsApp / Email.</p>
+      <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
+        <li>Harap hadir tepat waktu.</li>
+        <li>Reservasi dibatalkan jika tidak konfirmasi 15 menit setelah waktu.</li>
+        <li>Untuk grup &gt;10 orang, hubungi langsung via WA.</li>
+      </ul>
+    </section>
+
+    <section>
+      <form id="reservationForm" class="bg-white/90 backdrop-blur p-8 rounded-2xl shadow-xl space-y-4" novalidate>
+        <fieldset class="space-y-3">
+          <legend class="font-semibold text-brown-800 mb-2">Informasi Pribadi</legend>
+          <label class="block">
+            <span class="text-sm font-medium">Nama Lengkap :</span>
+            <input type="text" id="name" name="name" required minlength="3" placeholder="Nama lengkap" class="input-field">
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Email :</span>
+            <input type="email" id="email" name="email" required placeholder="contoh@mail.com" class="input-field">
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">No. Telepon :</span>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9+\- ]{6,}" placeholder="0812xxxxxxx" class="input-field">
+          </label>
+        </fieldset>
+
+        <fieldset class="space-y-3">
+          <legend class="font-semibold text-brown-800 mb-2">Detail Reservasi</legend>
+          <label class="block">
+            <span class="text-sm font-medium">Tanggal :</span>
+            <input type="date" id="date" name="date" required class="input-field">
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Waktu :</span>
+            <input type="time" id="time" name="time" required class="input-field">
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Jumlah Orang :</span>
+            <select id="people" name="people" required class="input-field">
+              <option value="">Pilih jumlah</option>
+              <script>for(let i=1;i<=10;i++){document.write(`<option value="${i}">${i} orang</option>`)};</script>
+            </select>
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Tipe Meja :</span>
+            <select id="tableType" name="tableType" required class="input-field">
+              <option value="">Pilih tipe meja</option>
+              <option>Regular</option>
+              <option>Window Seat</option>
+              <option>Private Room</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="space-y-3">
+          <legend class="font-semibold text-brown-800 mb-2">Tambahan</legend>
+          <label class="block">
+            <span class="text-sm font-medium">Catatan Khusus (opsional)</span>
+            <textarea id="notes" name="notes" rows="3" placeholder="Misal: kursi untuk anak, alergi makanan" class="input-field"></textarea>
+          </label>
+          <label class="flex items-center gap-2 text-sm">
+            <input type="checkbox" id="agree" required>
+            <span>Saya menyetujui syarat dan ketentuan reservasi.</span>
+          </label>
+        </fieldset>
+
+        <div class="flex gap-3 items-center">
+          <button type="submit" class="bg-gold text-white px-5 py-2 rounded-md hover:bg-brown-700 transition">Kirim Reservasi</button>
+          <button type="reset" class="border border-gold text-gold px-5 py-2 rounded-md hover:bg-gold hover:text-white transition">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-brown-900 text-white py-6 mt-10 shadow-inner">
+    <div class="container mx-auto px-4 text-center">&copy; <span id="year-res"></span> Kopi Santai — Cita rasa dalam setiap tegukan.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year-res').textContent = new Date().getFullYear();
+    const form = document.getElementById('reservationForm');
+    form.addEventListener('submit', function(e){
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+        return;
+      }
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      alert('Reservasi berhasil dikirim (demo)\\n' + JSON.stringify(data, null, 2));
+      form.reset();
+    });
+    document.getElementById('navToggle4').addEventListener('click', ()=> {
+      const nav = document.querySelector('header nav');
+      if (nav) nav.classList.toggle('hidden');
+    });
+  </script>
+</body>
